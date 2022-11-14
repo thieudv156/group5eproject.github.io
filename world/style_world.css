@@ -10,10 +10,7 @@
 
     }
 }
-.container-header-nav {
-    /* position: fixed; */
-    top: 0px;
-}
+
 .header-logo {
     display: flex;
     justify-content: center;
