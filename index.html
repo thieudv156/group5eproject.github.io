@@ -12,8 +12,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="row sticky-top bg-light ">
-            <div class="col-2 d-flex">
+        <div class="row sticky-top align-items-center" style="background-color: white;">
+            <div class="col-2 d-flex" style="padding: 0px">
                 <div class="dropdown">
                     <a class="btn btn-primary dropdown"
                       href="#"
@@ -22,9 +22,9 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars toggle-menu"></i>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu dropdown-menu-color" style="background-color: white;border: 1px solid" aria-labelledby="dropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Home</a></li>
                       <li><a class="dropdown-item" href="#">World</a></li>
                       <li><a class="dropdown-item" href="#">Business</a></li>
@@ -32,12 +32,13 @@
                       <li><a class="dropdown-item" href="#">Books</a></li>
                       <li><a class="dropdown-item" href="#">Food & Travel</a></li>
                       <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                      <li><a class="dropdown-item" href="#">Feedback</a></li>
                     </ul>
                 </div>
                 <!-- search -->
                 <div class="btn-group input-group w-25">
                     <button class="btn btn-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search toggle-menu"></i>
                     </button>
                     <ul class="dropdown-menu">
                      <li style="width: 200px; margin-top: -12px;">
@@ -57,19 +58,28 @@
                     </ul>
                   </div>
             </div>
-            <div class="col-8 header-logo"><img src="#" alt="">Logo DNBC News</div>
-            <div class="col-2 text-end"><button class="btn-signin">Sign in</button></div>
+            <div class="col-8 header-logo"><img src="./image-logo/logo.png" style="height:80px" alt=""></div>
+            <div class="col-2 text-end"><button class="btn-signin btn btn-info">Sign in</button></div>
+            
+            <!-- End navbar -->
         </div>
-        <!-- start header, sidebar -->
         
-
-        <div class="row">
-            <div class="col-9 toptrending">#toptrending</div>
+        <!-- start header, sidebar -->
+        <div class="row ">
+            <div class="col-9 toptrending">  
+                <div class="row">
+                    <div class="col-12 d-flex" style="gap: 30px;">
+                        <div ><a href="#" style="text-decoration: none; color: black;">#worldcup2022</a></div>
+                        <div ><a href="#" style="text-decoration: none; color: black;">#messi</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#ronaldo</a></div>
+                    </div>
+                </div>
+            </div>
             <div class="col-1">
                 <!-- kẻ dọc -->
                 <div class="div-striped"></div>
             </div>
-            <div class="col-2">Weather</div>
+            <div class="col-2" style="color: #0386b1; font-weight: bold;"><i class="fa-solid fa-cloud-moon"></i> Weather</div>
         </div>
         <!-- End header -->
         <!-- Start navbar -->
@@ -82,17 +92,27 @@
             <div class="col"><a href="#">Food & Travel</a></div>
             <div class="col"><a href="#">Contact us</a></div>
         </div>
-        <!-- End navbar -->
+        
+
+        
         <!-- Home page -->
     <div class="container">
         <div class="row mb-3">
             <div class="col-4">
-                <button>TRENDING</button>
+                <button class="btn-title">TRENDING</button>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <div class="row">Contribute us with some awesome cool snippets using HTML,CSS,JAVASCRIPT and BOOTSTRAP</div>
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
                 <div class="row">Contribute us with some awesome cool snippets using HTML,CSS,JAVASCRIPT and BOOTSTRAP</div>
             </div>
             <div class="col-lg-5">Contribute us with some awesome cool snippets using HTML,CSS,JAVASCRIPT and BOOTSTRAP
@@ -110,7 +130,7 @@
 
         <div class="row mb-3">
             <div class="col-4">
-                <button>WORLD</button>
+                <button class="btn-title">WORLD</button>
             </div>
         </div>
         <div class="row">
@@ -125,7 +145,7 @@
         <hr>
         <div class="row mb-3">
             <div class="col-4">
-                <button>BUSINESS</button>
+                <button class="btn-title">BUSINESS</button>
             </div>
         </div>
         <div class="row">
@@ -148,7 +168,7 @@
         <hr>
         <div class="row mb-3">
             <div class="col-4">
-                <button>SPORTS</button>
+                <button class="btn-title">SPORTS</button>
             </div>
         </div>
         <div class="row">
@@ -159,7 +179,7 @@
         <hr>
         <div class="row mb-3">
             <div class="col-4">
-                <button>BOOKS</button>
+                <button class="btn-title">BOOKS</button>
             </div>
         </div>
         <div class="row">
@@ -170,7 +190,7 @@
         <hr>
         <div class="row mb-3">
             <div class="col-4">
-                <button>FOOOD & TRAVEL</button>
+                <button class="btn-title">FOOOD & TRAVEL</button>
             </div>
         </div>
         <div class="row">
@@ -192,44 +212,34 @@
                   </nav>
             </div>
         </div>
-
-
-
-        <!-- </div ng-view>
-        <br><br><br><br><br><br><br><br><br><br> -->
-        <!-- div .view -->
-        <!-- Embed home page here
-        <br><br><br><br><br><br><br><br><br><br>
-        <div> -->
-            
         </div>
     </div>
 
     <!-- Footer -->
-    <div class="container container-footer">
-        <div class="row">
-            <div class="col-4"><a href="#">Home</a></div>
-            <div class="col-4"><a href="#">Books</a></div>
-            <div class="col-4"><img src="#" alt="">Logo</div>
-        </div>
+    <div class="container container-footer" >
         <div class="row">
             <div class="col-4"><a href="#">World</a></div>
+            <div class="col-4"><a href="#">Sports</a></div>
+            <div class="col-4"><a href="#"><img src="./image-logo/logo.png" style="height:50px;" alt=""></a></div>
+        </div>
+        <div class="row">
+            <div class="col-4"><a href="#">Books</a></div>
             <div class="col-4"><a href="#">Foods Travel</a></div>
             <div class="col-4"><a href="#">Head office</a></div>
         </div>
         <div class="row">
             <div class="col-4"><a href="#">Business</a></div>
             <div class="col-4"><a href="#">Books</a></div>
-            <div class="col-4"><a href="#">Sports</a></div>
+            <div class="col-4"><a href="#"></a></div>
         </div>
         <div class="row">
             <div class="col-4"><a href="#"></a></div>
             <div class="col-4"><a href="#"></a></div>
-            <div class="col-4"><img src="#" alt=""></div>
+            <div class="col-4">Tel:</div>
         </div>
-        <div class="social">Follow us on 
-            <a href="#"><i class="fa-brands fa-google"></i></a> 
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <div class="social">Follow us on
+            <a href="#"><span style="color: #4285F4;">G</span><span style="color :#DB4437">o</span><span style="color :#F4B400">o</span><span style="color: #4285F4">g</span><span style="color :#0F9D58">l</span><span style="color :#DB4437">e</span></a> 
+            <a href="#"><i class="fa-brands fa-facebook" style="color: #043db0; font-size: 30px"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-tiktok"></i></a>
         </div>
