@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
 </head>
-    <body class="container">
-        <div class="row sticky-top bg-light ">
-            <div class="col-2 d-flex">
+<body>
+    <div class="container">
+        <div class="row sticky-top align-items-center" style="background-color: white;">
+            <div class="col-2 d-flex" style="padding: 0px">
                 <div class="dropdown">
                     <a class="btn btn-primary dropdown"
                       href="#"
@@ -21,9 +22,9 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars toggle-menu"></i>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu dropdown-menu-color" style="background-color: white;border: 1px solid" aria-labelledby="dropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Home</a></li>
                       <li><a class="dropdown-item" href="#">World</a></li>
                       <li><a class="dropdown-item" href="#">Business</a></li>
@@ -31,12 +32,13 @@
                       <li><a class="dropdown-item" href="#">Books</a></li>
                       <li><a class="dropdown-item" href="#">Food & Travel</a></li>
                       <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                      <li><a class="dropdown-item" href="#">Feedback</a></li>
                     </ul>
                 </div>
                 <!-- search -->
                 <div class="btn-group input-group w-25">
                     <button class="btn btn-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search toggle-menu"></i>
                     </button>
                     <ul class="dropdown-menu">
                      <li style="width: 200px; margin-top: -12px;">
@@ -56,19 +58,29 @@
                     </ul>
                   </div>
             </div>
-            <div class="col-8 header-logo"><img src="#" alt="">Logo DNBC News</div>
-            <div class="col-2 text-end"><button class="btn-signin">Sign in</button></div>
+            <div class="col-8 header-logo"><a href="#"><img src="./image-logo/logo.png" style="height:80px" alt=""></a></div>
+            <div class="col-2 text-end"><button class="btn-signin btn btn-info">
+                <i class="fa-regular fa-user"></i>
+            </button></div>
+            
+            <!-- End navbar -->
         </div>
-        <!-- start header, sidebar -->
         
-
-        <div class="row">
-            <div class="col-9 toptrending">#toptrending</div>
-            <div class="col-1">
-                <!-- kẻ dọc -->
-                <div class="div-striped"></div>
+        <!-- start header, sidebar -->
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-lg-10 toptrending">  
+                <div class="row">
+                    <div class="col-12 d-flex" style="gap: 30px;">
+                        <div ><a href="#" style="text-decoration: none; color: black;">#worldcup2022</a></div>
+                        <div ><a href="#" style="text-decoration: none; color: black;">#messi</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#ronaldo</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#twiter</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#elonmusk</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#APEC2022</a></div>
+                    </div>
+                </div>
             </div>
-            <div class="col-2">Weather</div>
+            <div class="col-2" style="color: #0386b1; font-weight: bold;"><i class="fa-solid fa-cloud-moon"></i> Weather</div>
         </div>
         <!-- End header -->
         <!-- Start navbar -->
@@ -81,14 +93,12 @@
             <div class="col"><a href="#">Food & Travel</a></div>
             <div class="col"><a href="#">Contact us</a></div>
         </div>
-        <!-- End navbar -->
-
-        <!-- Start content -->
-       <hr>
-       <div class="row">
+        <!-- Home page -->
+        <hr>
+        <div class="row">
         <div class="col-2">BOOKS</div>
-       </div>
-       <div class="row">
+        </div>
+        <div class="row">
         <div class="col-5">You know you're in love when you can't fall asleep because reality is finally better than your dreams.”
             ― Dr. Seuss</div>
         <div class="col-4">You know you're in love when you can't fall asleep because reality is finally better than your dreams.”
@@ -99,69 +109,66 @@
             <div class="row">“You only live once, but if you do it right, once is enough.”
                 ― Mae West</div>
         </div>
-       </div>
-       <hr>
-       <div class="row">
+        </div>
+        <hr>
+        <div class="row">
             <div class="col-3">Shaping the World of Trust</div>
             <div class="col-3">Shaping the World of Trust</div>
             <div class="col-3">Shaping the World of Trust</div>
             <div class="col-3">Shaping the World of Trust</div>
-       </div>
-       <hr>
-       <div class="row">
+        </div>
+        <hr>
+        <div class="row">
         <h1>Advertisement</h1>
-       </div>
-       <hr>
-       <div class="row">
+        </div>
+        <hr>
+        <div class="row">
         <div class="col-6">“Live as if you were to die tomorrow. Learn as if you were to live forever.”
             ― Mahatma Gandhi</div>
         <div class="col-6">“Live as if you were to die tomorrow. Learn as if you were to live forever.”
             ― Mahatma Gandhi</div>
-       </div>
-       <br>
-       <hr>
-        <!-- Footer -->
-        <div class="container container-footer">
-            <div class="row">
-                <div class="col-4"><a href="#">Home</a></div>
-                <div class="col-4"><a href="#">Books</a></div>
-                <div class="col-4"><img src="#" alt="">Logo</div>
-            </div>
+        </div>
+        <br>
+        <hr>
+    <!-- Footer -->
+    <div class="container container-footer" >
+        <div class="footer-menu">
             <div class="row">
                 <div class="col-4"><a href="#">World</a></div>
-                <div class="col-4"><a href="#">Foods Travel</a></div>
+                <div class="col-4"><a href="#">Sports</a></div>
+                <div class="col-4"><a href="#"><img src="./image-logo/logo.png" style="height:50px;" alt=""></a></div>
+            </div>
+            <div class="row container-row-2" style="padding: 20px 0px 40px 0px;">
+                <div class="col-4"><a href="#">Books</a></div>
+                <div class="col-4"><a href="#">Foods & Travel</a></div>
                 <div class="col-4"><a href="#">Head office</a></div>
             </div>
             <div class="row">
                 <div class="col-4"><a href="#">Business</a></div>
                 <div class="col-4"><a href="#">Books</a></div>
-                <div class="col-4"><a href="#">Sports</a></div>
-            </div>
-            <div class="row">
-                <div class="col-4"><a href="#"></a></div>
-                <div class="col-4"><a href="#"></a></div>
-                <div class="col-4"><img src="#" alt=""></div>
-            </div>
-            <div class="social">Follow us on 
-                <a href="#"><i class="fa-brands fa-google"></i></a> 
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-            <div class="copyright">
-                &copy; Copyright: Group 5 - FPT Aptech
+                <div class="col-4" style="font-weight: bold; padding-left: calc(120px + 12px); color: white; font-size: 20px;">Tel: 0123-456-789</div>
             </div>
         </div>
-    
-    
-        
-    
-        
-    
-    <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        <script>
-              
-    
-        </script>
-    </body>
+        <br>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-google" style=" font-size: 25px"></i></a> 
+            <a href="#"><i class="fa-brands fa-facebook" style=" font-size: 25px"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style=" font-size: 25px"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok" style=" font-size: 25px"></i></a>
+        </div>
+        <br>
+        <div class="copyright">
+            &copy; Copyright: Group 5 - FPT Aptech
+        </div>
+    </div>
+        <br>
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+          
+
+    </script>
+</body>
+</html>
+
+
