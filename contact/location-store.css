@@ -1,0 +1,232 @@
+.row-navbar {
+    visibility: hidden;
+    /* display: none; */
+    background-color: #f6f6f6;
+    border-radius: 3px;
+    height: 60px;
+    align-items: center;
+}
+.row-navbar a {
+    padding: 10px;
+}
+@media (min-width: 992px) {
+    .row-navbar {
+        visibility: visible;
+        /* display: block; */
+
+    }
+}
+.container-header-nav {
+    /* position: fixed; */
+    top: 0px;
+}
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropdownMenuLink {
+    background-color: transparent;
+    color: black;
+    border: none;
+    
+}
+.input-group .btn-secondary, .input-group .btn-secondary:active {
+    background-color: transparent;
+    border: none;
+    color: black;
+    /* border-top-right-radius: 15px; */
+}
+
+.input-group-removeOutline{
+    border: 1px solid blue;
+    border-radius: 5px;
+
+}
+.input-group-removeOutline .btn-outline-secondary:hover {
+    color: black;
+}
+.toggle-menu {
+    font-size: 22px;
+    color: #129AC6;
+}
+.btn-signin {
+    border-radius: 10px;
+    color: white;
+    background-color: #129AC6;
+}
+
+.btn-signin:hover {
+    color: white;
+    background-color: #2e749a;
+    border: 1px solid #2e749a;
+}
+.row-outline {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.dropdown-menu.show {
+    display: block;
+    border: none;
+    background-color: transparent;
+}
+.toptrending {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.toptrending a:hover {
+    font-weight: bold;
+}
+.div-striped {
+    border: 1px solid ;
+    width: 0.2px;
+    height: 18px;
+    border-color: #EFEFEF;
+}
+.row-navbar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgb(220, 219, 219);
+    border-bottom: 1px solid rgb(220, 219, 219);
+    padding: 2px 0px;
+}
+.row-navbar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border: none;
+    font-size: 18px;
+    padding: 3px 0px;
+    border-radius: 3px;
+}
+.row-navbar a:hover{
+    background-color: #129AC6;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.btn-title {
+    color: white;
+    font-weight: bold;
+    background-color: #129AC6;
+    border: none;
+    padding: 5px 20px;
+    min-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+.pagination a {
+    color: black;
+}
+
+.list
+ {
+    float: left;
+    width: 320px;
+    /* background: yellow; */
+}
+
+.list ul 
+{
+    list-style: disc;
+    list-style: none;
+}
+
+.branch-1, .branch-2, .branch-3
+ {
+    cursor: pointer;
+    margin: 5px;
+    background: rgb(234, 239, 245);
+    color:black;
+    text-align-last: right;
+}
+
+.map {
+    float: right;
+    width: 850px;
+    height: 600px;
+    /* background: red; */
+    position: relative;
+}
+
+.location .child 
+{
+    width: 70%;
+    height: 500px;
+    display: none;
+    position: absolute;
+/*   background: teal;*/    
+}
+
+.location {
+    width: 70%;
+    height: 500px;
+ /* background: teal;*/
+    margin-left: 350px;
+}
+
+hr
+ {
+    width: 100%;
+    border-bottom: solid teal;
+}
+
+.content
+{
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.list li:hover
+{
+    color: white;
+    background-color: rgb(21, 54, 95);
+}
+
+h2.text1
+{
+    font-weight: 800;
+    color: rgb(41,98,167);  
+}
+
+
+.container-footer a, .tel-phone {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 120px;
+    padding-top: 50px;
+}
+
+.container-footer {
+    /* background-color: #129AC6; */
+    background-image: linear-gradient(#129AC6 , #8BD2E8);
+    /* text-align: ; */
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    gap: 10px;
+    color: white;
+    font-size: 20px; 
+    font-weight: bold;
+    padding-left: 230px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}

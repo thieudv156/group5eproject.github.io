@@ -9,6 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="location-store.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b5b2a77a16.js"></script>
+    <!-- JS-LocationStore -->
+    <script src="Location-Store.js"></script>
 </head>
 <body>
     <div class="container">
@@ -98,67 +106,37 @@
         
         <hr>
         <!-- content -->
-        <div class="row">
-            <div class="col-2">FOOD</div>
-        </div>
-        <div class="row">
-            <div class="col-9">
-                <div class="row">“Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.”
-                    ― Martin Luther King Jr., A Testament of Hope: The Essential Writings and Speeches</div>
-                <div class="row">
-                    <div class="col-">“Without music, life would be a mistake.”
-                        ― Friedrich Nietzsche, Twilight of the Idols</div>
-                    <div class="col-">“Without music, life would be a mistake.”
-                        ― Friedrich Nietzsche, Twilight of the Idols</div>
-                    <div class="col-">“Without music, life would be a mistake.”
-                        ― Friedrich Nietzsche, Twilight of the Idols</div>
-                </div>
+        <div class="content">
+            <div class="container-fluid">
+                    <h2 class="fas fa-home text1">&ensp;DNBC newsroom address list</h2>
+                    <hr>
+                        <div class="list">
+                            <ul>
+                                <li class="branch-1 active"><span class="fas fa-map-marker-alt">&ensp;</span>
+                                    Head office: Westminster, London, England, United Kingdom
+                                    <p class="fas fa-phone text1">&ensp;Phone: 1900 696 969</p><br>
+                                    <p class="fas fa-fax text1">&ensp;Fax: (84-8) 38 210 818</p>
+                                </li>
+                                <li class="branch-2"><span class="fas fa-map-marker-alt">&ensp;</span>Branch 1: 720A Dien Bien Phu Street, Ward 22, District Binh Thanh, HCMC</li>
+                                <li class="branch-3"><span class="fas fa-map-marker-alt">&ensp;</span>Branch 2: 1st floor, Building C5, Thuy Loi University, 175 Tay Son, Dong Da, Hanoi</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <div class="child 1" style="display: block;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19870.740366451188!2d-0.1522501759883991!3d51.49775684653185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ddae95b455%3A0xcd1d64863bc57f40!2zV2VzdG1pbnN0ZXIsIEx1w6JuIMSQw7RuLCBWxrDGoW5nIFF14buRYyBBbmg!5e0!3m2!1svi!2s!4v1668442939645!5m2!1svi!2s" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="child 2">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2169423723517!2d106.71782653309815!3d10.794689733093994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175514627a062b7%3A0x27010256bf6c92c!2sVinhomes%20Central%20Park!5e0!3m2!1svi!2s!4v1668443124234!5m2!1svi!2s" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="child 3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1862.3217120590452!2d105.82404350804373!3d21.006925946502527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%201st%20floor%2C%20Building%20C5%2C%20Thuy%20Loi%20University%2C%20175%20Tay%20Son%2C%20Dong%20Da%2C%20Hanoi!5e0!3m2!1svi!2s!4v1668443197615!5m2!1svi!2s" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
             </div>
-            <div class="col-3">“To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.”
-                ― Ralph Waldo Emerson</div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-2">TRAVEL</div>
-        </div>
-        <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__480.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1500622944204-b135684e99fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”
-― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”
-― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”
-― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”
-― Andre Gide, Autumn Leaves</div>
         </div>
     <hr>
 
