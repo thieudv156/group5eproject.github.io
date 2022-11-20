@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOOD</title>
+    <title>DNBC News</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -12,8 +12,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="row sticky-top bg-light ">
-            <div class="col-2 d-flex">
+        <div class="row sticky-top align-items-center" style="background-color: white;">
+            <div class="col-2 d-flex" style="padding: 0px">
                 <div class="dropdown">
                     <a class="btn btn-primary dropdown"
                       href="#"
@@ -22,9 +22,9 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars toggle-menu"></i>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu dropdown-menu-color" style="background-color: white;border: 1px solid" aria-labelledby="dropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Home</a></li>
                       <li><a class="dropdown-item" href="#">World</a></li>
                       <li><a class="dropdown-item" href="#">Business</a></li>
@@ -32,12 +32,13 @@
                       <li><a class="dropdown-item" href="#">Books</a></li>
                       <li><a class="dropdown-item" href="#">Food & Travel</a></li>
                       <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                      <li><a class="dropdown-item" href="#">Feedback</a></li>
                     </ul>
                 </div>
                 <!-- search -->
                 <div class="btn-group input-group w-25">
                     <button class="btn btn-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search toggle-menu"></i>
                     </button>
                     <ul class="dropdown-menu">
                      <li style="width: 200px; margin-top: -12px;">
@@ -57,19 +58,29 @@
                     </ul>
                   </div>
             </div>
-            <div class="col-8 header-logo"><img src="#" alt="">Logo DNBC News</div>
-            <div class="col-2 text-end"><button class="btn-signin">Sign in</button></div>
+            <div class="col-8 header-logo"><a href="#"><img src="../../image-logo/logo.png" style="height:80px" alt=""></a></div>
+            <div class="col-2 text-end"><button class="btn-signin btn btn-info">
+                <i class="fa-regular fa-user"></i>
+            </button></div>
+            
+            <!-- End navbar -->
         </div>
-        <!-- start header, sidebar -->
         
-
-        <div class="row">
-            <div class="col-9 toptrending">#toptrending</div>
-            <div class="col-1">
-                <!-- kẻ dọc -->
-                <div class="div-striped"></div>
+        <!-- start header, sidebar -->
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-lg-10 toptrending">  
+                <div class="row">
+                    <div class="col-12 d-flex" style="gap: 30px;">
+                        <div ><a href="#" style="text-decoration: none; color: black;">#worldcup2022</a></div>
+                        <div ><a href="#" style="text-decoration: none; color: black;">#messi</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#ronaldo</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#twiter</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#elonmusk</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#APEC2022</a></div>
+                    </div>
+                </div>
             </div>
-            <div class="col-2">Weather</div>
+            <div class="col-2" style="color: #0386b1; font-weight: bold;"><i class="fa-solid fa-cloud-moon"></i> Weather</div>
         </div>
         <!-- End header -->
         <!-- Start navbar -->
@@ -82,48 +93,74 @@
             <div class="col"><a href="#">Food & Travel</a></div>
             <div class="col"><a href="#">Contact us</a></div>
         </div>
-        <!-- End navbar -->
+        <!-- Home page -->
+        <br>
+        
         <hr>
+        <!-- content -->
         <div class="row">
             <div class="col-2">FOOD</div>
         </div>
         <div class="row">
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
+            <div class="col-3"><img src="../image_food/1nina.jpg" style="width: 100%;" alt="nina">
+                Is La Niña giving us the best prawns ever for Christmas lunch this year?</div>
+            <div class="col-3"><img src="../image_food/2perkup.png" style="width: 100%;" alt="perkup">
+                Perk up: New research says coffee drinkers live longer</div>
+            <div class="col-3"><img src="../image_food/5avo.png"  style="width: 100%; height: 220px;" alt="avo">
+                Everything You Avo Wanted</div>
+            <div class="col-3"><img src="../image_food/6ramen.png" style="width: 100%; height: 210px;" alt="ramen">
+                Food shortages are increasing across the world, and ramen could be next</div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
+            <div class="col-3"><img src="../image_food/7science.png" style="width: 100%;" alt="science">
+                Science says consuming wine and cheese daily is good for your brain</div>
+            <div class="col-3"><img src="../image_food/8countdown.png" style="width: 100%; height: 200px;" alt="countdown">
+                Christmas countdown calendar: what to do at 2 weeks</div>
+            <div class="col-3"><img src="../image_food/9cheese.png" style="width: 100%;" alt="cheese">
+                WHAT IS FETA / SIRENE (Bulgarian Cheese)?</div>
+            <div class="col-3"><img src="../image_food/10nanna.png" style="width: 100%;" alt="nanna">
+                34 recipes from Nanna we're making in times like these</div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.” Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.” Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.” Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.” Andre Gide, Autumn Leaves</div>
+            <div class="col-6"><img src="../image_food/11countdown_calendar.png" style="width: 100%; height: 300px;" alt="calendar">
+                Christmas countdown calendar: what to do at 3 weeks</div>
+            <div class="col-3"><img src="../image_food/12countdown.png" style="width: 100%; height: 230px;" alt="countdown"> 
+                Christmas countdown calendar: what to do at 4 weeks</div>
+            <div class="col-3"><img src="../image_food/3cherries.png" style="width: 100%; height: 230px;" alt="cherries">
+                Why you can expect to pay more for cherries this Christmas</div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
-            <div class="col-3">“It is better to be hated for what you are than to be loved for what you are not.”― Andre Gide, Autumn Leaves</div>
+            <div class="col-3"><img src="../image_food/13milk.png" style="width: 100%;" alt="milk">
+                The price of milk is set to increase as Aussie farmers battle floods and rising costs</div>
+            <div class="col-3"><img src="../image_food/14cost_effective.png" style="width: 100%;" alt="cost">
+                Matt Preston shares his cost-effective meal ideas to help you save on the weekly shop</div>
+            <div class="col-3"><img src="../image_food/4barramundi.png" style="width: 100%;" alt="barramundi">
+                Why so many restaurants are hooked on Australian barramundi</div>
+            <div class="col-3"><img src="../image_food/15banging.png" style="width: 100%;" alt="banging">
+                Banging news! You can now get an old fashioned cocktail in snag form</div>
         </div>
         <hr>
         <div class="row">
             <div class="col-9">
-                <div class="row">“Insanity is doing the same thing, over and over again, but expecting different results.” ― Narcotics Anonymous</div>
+                <div class="row"><img src="../image_food/16Jo_Barrett.png" style="height: 550px;" alt="barrett">
+                    <b>Jo Barrett appointed food director at On Island Time, Flinders Island</b>
+                    Jo Barrett (ex-Oakridge, now Little Picket in Lorne) has been appointed food director at Flinders Island’s On Island Time, which includes bar/restaurant The Flinders Wharf and luxury accommodation at Wombat Lodge, The Crayshack and Dwarf Cottage.  
+                </div>
         <hr>
-                <div class="row">“Insanity is doing the same thing, over and over again, but expecting different results.” ― Narcotics Anonymous</div>
+                <div class="row"><img src="../image_food/17Fathers_Day.png" alt="father">
+                    <b>What Dad really wants this Father's Day, according to Matt Preston</b>
+                    So you’ve forgotten today is Father’s Day. Firstly, don’t feel guilty. Quite frankly, it’s understandable that it crept up on you. Father’s Day here is months later than most of the world, with many countries marking it in June, and others in March, May, August and November. No wonder we’re confused.</div>
         <hr>
-                <div class="row">“Insanity is doing the same thing, over and over again, but expecting different results.” ― Narcotics Anonymous</div>
+                <div class="row">
+                    <div class="col-6"><img src="../image_food/18drinking.png" style="width: 100%;" alt="drinking">
+                        Why you should be drinking chilled red wine this summer (and all year long)</div>
+                    <div class="col-6"><img src="../image_food/19melissa.png" style="width: 100%;" alt="melissa">
+                        Melissa Leong shares her 5 must-try food experiences in the Top End</div>
+                    </div>
         <hr>
-                <div class="row">“Insanity is doing the same thing, over and over again, but expecting different results.” ― Narcotics Anonymous</div>
             </div>
             <div class="col-3">
                 <div class="row">Advertisement</div>
@@ -131,39 +168,41 @@
                 <div class="row">Advertisement</div>
             </div>
         </div>
-        <hr>
+    <hr>
+
+    <br>
     <!-- Footer -->
-    <div class="container container-footer">
-        <div class="row">
-            <div class="col-4"><a href="#">Home</a></div>
-            <div class="col-4"><a href="#">Books</a></div>
-            <div class="col-4"><img src="#" alt="">Logo</div>
+    <div class="container container-footer" >
+        <div class="footer-menu">
+            <div class="row">
+                <div class="col-4"><a href="#">World</a></div>
+                <div class="col-4"><a href="#">Sports</a></div>
+                <div class="col-4"><a href="#"><img src="../../image-logo/logo.png" style="height:50px;" alt=""></a></div>
+            </div>
+            <div class="row container-row-2" style="padding: 20px 0px 40px 0px;">
+                <div class="col-4"><a href="#">Books</a></div>
+                <div class="col-4"><a href="#">Foods & Travel</a></div>
+                <div class="col-4"><a href="#">Head office</a></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><a href="#">Business</a></div>
+                <div class="col-4"><a href="#">Books</a></div>
+                <div class="col-4" style="font-weight: bold; padding-left: calc(120px + 12px); color: white; font-size: 20px;">Tel: 0123-456-789</div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-4"><a href="#">World</a></div>
-            <div class="col-4"><a href="#">Foods Travel</a></div>
-            <div class="col-4"><a href="#">Head office</a></div>
+        <br>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-google" style=" font-size: 25px"></i></a> 
+            <a href="#"><i class="fa-brands fa-facebook" style=" font-size: 25px"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style=" font-size: 25px"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok" style=" font-size: 25px"></i></a>
         </div>
-        <div class="row">
-            <div class="col-4"><a href="#">Business</a></div>
-            <div class="col-4"><a href="#">Books</a></div>
-            <div class="col-4"><a href="#">Sports</a></div>
-        </div>
-        <div class="row">
-            <div class="col-4"><a href="#"></a></div>
-            <div class="col-4"><a href="#"></a></div>
-            <div class="col-4"><img src="#" alt=""></div>
-        </div>
-        <div class="social">Follow us on 
-            <a href="#"><i class="fa-brands fa-google"></i></a> 
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
+        <br>
         <div class="copyright">
             &copy; Copyright: Group 5 - FPT Aptech
         </div>
     </div>
+        <br>
 
 
     

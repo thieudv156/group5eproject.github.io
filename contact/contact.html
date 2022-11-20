@@ -2,53 +2,184 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>location-store</title>
-    <link rel="stylesheet" href="../CSS/location-store.css">
-    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-    <script src="../JS/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="../JS/jQuery/popper.min.js"></script>
-    <script src="../JS/jQuery/bootstrap.min.js"></script>
+    <title>DNBC News</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="location-store.css">
+    <script src="jquery-3.4.1.min.js"></script>
     <script src="https://kit.fontawesome.com/b5b2a77a16.js"></script>
     <!-- JS-LocationStore -->
-    <script src="../JS/JScustom/Location-Store.js"></script>
+    <script src="Location-Store.js"></script>
 </head>
-<body>  
+<body>
+    <div class="container">
+        <div class="row sticky-top align-items-center" style="background-color: white;">
+            <div class="col-2 d-flex" style="padding: 0px">
+                <div class="dropdown">
+                    <a class="btn btn-primary dropdown"
+                      href="#"
+                      role="button"
+                      id="dropdownMenuLink"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                    <i class="fa-solid fa-bars toggle-menu"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-color" style="background-color: white;border: 1px solid" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Home</a></li>
+                      <li><a class="dropdown-item" href="#">World</a></li>
+                      <li><a class="dropdown-item" href="#">Business</a></li>
+                      <li><a class="dropdown-item" href="#">Sports</a></li>
+                      <li><a class="dropdown-item" href="#">Books</a></li>
+                      <li><a class="dropdown-item" href="#">Food & Travel</a></li>
+                      <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                      <li><a class="dropdown-item" href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <!-- search -->
+                <div class="btn-group input-group w-25">
+                    <button class="btn btn-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-search toggle-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                     <li style="width: 200px; margin-top: -12px;">
+                        <div class="row">
+                            <div class="col-11 row-outline">
+                                <div class="input-group input-group-removeOutline">
+                                    <input class="form-control border-0 border" type="search" placeholder="Search" id="example-search-input">
+                                    <span class="input-group-append">
+                                        <button class="btn btn-outline-secondary bg-white border-0 border-0 border ms-n5" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                     </li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-8 header-logo"><a href="#"><img src="../image-logo/logo.png" style="height:80px" alt=""></a></div>
+            <div class="col-2 text-end"><button class="btn-signin btn btn-info">
+                <i class="fa-regular fa-user"></i>
+            </button></div>
+            
+            <!-- End navbar -->
+        </div>
+        
+        <!-- start header, sidebar -->
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-lg-10 toptrending">  
+                <div class="row">
+                    <div class="col-12 d-flex" style="gap: 30px;">
+                        <div ><a href="#" style="text-decoration: none; color: black;">#worldcup2022</a></div>
+                        <div ><a href="#" style="text-decoration: none; color: black;">#messi</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#ronaldo</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#twiter</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#elonmusk</a></div>
+                        <div><a href="#" style="text-decoration: none; color: black;">#APEC2022</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2" style="color: #0386b1; font-weight: bold;"><i class="fa-solid fa-cloud-moon"></i> Weather</div>
+        </div>
+        <!-- End header -->
+        <!-- Start navbar -->
+        <div class="row row-navbar">
+            <div class="col"><a href="#">Home</a></div>
+            <div class="col"><a href="#">World</a></div>
+            <div class="col"><a href="#">Business</a></div>
+            <div class="col"><a href="#">Sports</a></div>
+            <div class="col"><a href="#">Books</a></div>
+            <div class="col"><a href="#">Food & Travel</a></div>
+            <div class="col"><a href="#">Contact us</a></div>
+        </div>
+        <!-- Home page -->
+        <br>
+        
+        <hr>
+        <!-- content -->
+        <div class="content">
+            <div class="container-fluid">
+                    <h2 class="fas fa-home text1">&ensp;DNBC newsroom address list</h2>
+                    <hr>
+                        <div class="list">
+                            <ul>
+                                <li class="branch-1 active"><span class="fas fa-map-marker-alt">&ensp;</span>
+                                    Head office: Westminster, London, England, United Kingdom
+                                    <p class="fas fa-phone text1">&ensp;Phone: 1900 696 969</p><br>
+                                    <p class="fas fa-fax text1">&ensp;Fax: (84-8) 38 210 818</p>
+                                </li>
+                                <li class="branch-2"><span class="fas fa-map-marker-alt">&ensp;</span>Branch 1: 720A Dien Bien Phu Street, Ward 22, District Binh Thanh, HCMC</li>
+                                <li class="branch-3"><span class="fas fa-map-marker-alt">&ensp;</span>Branch 2: 1st floor, Building C5, Thuy Loi University, 175 Tay Son, Dong Da, Hanoi</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <div class="child 1" style="display: block;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19870.740366451188!2d-0.1522501759883991!3d51.49775684653185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ddae95b455%3A0xcd1d64863bc57f40!2zV2VzdG1pbnN0ZXIsIEx1w6JuIMSQw7RuLCBWxrDGoW5nIFF14buRYyBBbmg!5e0!3m2!1svi!2s!4v1668442939645!5m2!1svi!2s" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="child 2">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2169423723517!2d106.71782653309815!3d10.794689733093994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175514627a062b7%3A0x27010256bf6c92c!2sVinhomes%20Central%20Park!5e0!3m2!1svi!2s!4v1668443124234!5m2!1svi!2s" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="child 3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1862.3217120590452!2d105.82404350804373!3d21.006925946502527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%201st%20floor%2C%20Building%20C5%2C%20Thuy%20Loi%20University%2C%20175%20Tay%20Son%2C%20Dong%20Da%2C%20Hanoi!5e0!3m2!1svi!2s!4v1668443197615!5m2!1svi!2s" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    <hr>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="container-fluid">
-                <h2 class="fas fa-home text1">&ensp;DNBC newsroom address list</h2>
-                <hr>
-                    <div class="list">
-                        <ul>
-                            <li class="branch-1 active"><span class="fas fa-map-marker-alt">&ensp;</span>
-                                Head office: Westminster, London, England, United Kingdom
-                                <p class="fas fa-phone text1">&ensp;Phone: 1900 696 969</p><br>
-                                <p class="fas fa-fax text1">&ensp;Fax: (84-8) 38 210 818</p>
-                            </li>
-                            <li class="branch-2"><span class="fas fa-map-marker-alt">&ensp;</span>Branch 1: 720A Dien Bien Phu Street, Ward 22, District Binh Thanh, HCMC</li>
-                            <li class="branch-3"><span class="fas fa-map-marker-alt">&ensp;</span>Branch 2: 1st floor, Building C5, Thuy Loi University, 175 Tay Son, Dong Da, Hanoi</li>
-                            
-                        </ul>
-                    </div>
-                    <div class="location">
-                        <div class="child 1" style="display: block;">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19870.740366451188!2d-0.1522501759883991!3d51.49775684653185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ddae95b455%3A0xcd1d64863bc57f40!2zV2VzdG1pbnN0ZXIsIEx1w6JuIMSQw7RuLCBWxrDGoW5nIFF14buRYyBBbmg!5e0!3m2!1svi!2s!4v1668442939645!5m2!1svi!2s" 
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="child 2">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2169423723517!2d106.71782653309815!3d10.794689733093994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175514627a062b7%3A0x27010256bf6c92c!2sVinhomes%20Central%20Park!5e0!3m2!1svi!2s!4v1668443124234!5m2!1svi!2s" 
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="child 3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1862.3217120590452!2d105.82404350804373!3d21.006925946502527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%201st%20floor%2C%20Building%20C5%2C%20Thuy%20Loi%20University%2C%20175%20Tay%20Son%2C%20Dong%20Da%2C%20Hanoi!5e0!3m2!1svi!2s!4v1668443197615!5m2!1svi!2s" 
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
+    <br>
+    <!-- Footer -->
+    <div class="container container-footer" >
+        <div class="footer-menu">
+            <div class="row">
+                <div class="col-4"><a href="#">World</a></div>
+                <div class="col-4"><a href="#">Sports</a></div>
+                <div class="col-4"><a href="#"><img src="../image-logo/logo.png" style="height:50px;" alt=""></a></div>
+            </div>
+            <div class="row container-row-2" style="padding: 20px 0px 40px 0px;">
+                <div class="col-4"><a href="#">Books</a></div>
+                <div class="col-4"><a href="#">Foods & Travel</a></div>
+                <div class="col-4"><a href="#">Head office</a></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><a href="#">Business</a></div>
+                <div class="col-4"><a href="#">Books</a></div>
+                <div class="col-4" style="font-weight: bold; padding-left: calc(120px + 12px); color: white; font-size: 20px;">Tel: 0123-456-789</div>
+            </div>
+        </div>
+        <br>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-google" style=" font-size: 25px"></i></a> 
+            <a href="#"><i class="fa-brands fa-facebook" style=" font-size: 25px"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style=" font-size: 25px"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok" style=" font-size: 25px"></i></a>
+        </div>
+        <br>
+        <div class="copyright">
+            &copy; Copyright: Group 5 - FPT Aptech
         </div>
     </div>
+        <br>
+
+
     
+
+    
+
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+          
+
+    </script>
 </body>
 </html>

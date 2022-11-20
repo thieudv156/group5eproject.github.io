@@ -1,4 +1,3 @@
-
 .row-navbar {
     visibility: hidden;
     /* display: none; */
@@ -33,7 +32,6 @@
     border: none;
     
 }
-
 .input-group .btn-secondary, .input-group .btn-secondary:active {
     background-color: transparent;
     border: none;
@@ -122,10 +120,80 @@
     text-align: center;
     border-radius: 10px;
 }
-
 .pagination a {
     color: black;
 }
+
+.list
+ {
+    float: left;
+    width: 320px;
+    /* background: yellow; */
+}
+
+.list ul 
+{
+    list-style: disc;
+    list-style: none;
+}
+
+.branch-1, .branch-2, .branch-3
+ {
+    cursor: pointer;
+    margin: 5px;
+    background: rgb(234, 239, 245);
+    color:black;
+    text-align-last: right;
+}
+
+.map {
+    float: right;
+    width: 850px;
+    height: 600px;
+    /* background: red; */
+    position: relative;
+}
+
+.location .child 
+{
+    width: 70%;
+    height: 500px;
+    display: none;
+    position: absolute;
+/*   background: teal;*/    
+}
+
+.location {
+    width: 70%;
+    height: 500px;
+ /* background: teal;*/
+    margin-left: 350px;
+}
+
+hr
+ {
+    width: 100%;
+    border-bottom: solid teal;
+}
+
+.content
+{
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.list li:hover
+{
+    color: white;
+    background-color: rgb(21, 54, 95);
+}
+
+h2.text1
+{
+    font-weight: 800;
+    color: rgb(41,98,167);  
+}
+
+
 .container-footer a, .tel-phone {
     text-decoration: none;
     color: white;
