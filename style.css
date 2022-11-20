@@ -153,7 +153,14 @@
     color: white;
     font-size: 20px; 
     font-weight: bold;
-    padding-left: 230px;
+    /* padding-left: 230px; */
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .copyright {
