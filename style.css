@@ -139,9 +139,13 @@
     border: solid 1px gray;
     height: 30px;
     width: 100%;
-
 }
-
+.login-color a {
+    color: #129AC6;
+}
+.tab-content button {
+    color: #129AC6;
+}
 .container-mailing {
     display: flex;
     justify-content: space-between;
@@ -153,7 +157,13 @@
     font-weight: bold;
     
 }
+/* Detail content */
 
+.image-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container-footer .row {
     margin: 10px 0px;
 }
