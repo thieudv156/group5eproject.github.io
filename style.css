@@ -121,7 +121,7 @@
     color: black;
 }
 
-
+/* Footer */
 .container-footer {
     background-image: linear-gradient(#129AC6 , #8BD2E8);
     color: white;
@@ -172,8 +172,10 @@
     font-weight: bold;
     background-color: #129AC6;
     color: white;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     border-radius: 10px;
+    width: 210px;
+    height: 35px;
 }
 .text-center button {
     color: #129AC6;
