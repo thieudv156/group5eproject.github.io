@@ -173,14 +173,25 @@
     background-color: #129AC6;
     color: white;
     padding-top: 10px;
+    border-radius: 10px;
 }
-.iconsocial-color {
+.text-center button {
     color: #129AC6;
 }
 .forgetpw {
     text-decoration: none;
     color: #129AC6;
 }
+
+.signin-btn {
+    background-color: #129AC6;
+    border-color: #129AC6;
+}
+
+.signin-btn:hover {
+    background-color: #2e749a;
+}
+
 .container-footer .row {
     margin: 10px 0px;
 }
