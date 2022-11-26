@@ -143,7 +143,7 @@
 .login-color a {
     color: #129AC6;
 }
-.tab-content button {
+.tab-content {
     color: #129AC6;
 }
 .container-mailing {
@@ -155,7 +155,6 @@
     color: white;
     font-size: 20px; 
     font-weight: bold;
-    
 }
 /* Detail content */
 
@@ -163,6 +162,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Login */
+.login--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #129AC6;
+    color: white;
+    padding-top: 10px;
+}
+.iconsocial-color {
+    color: #129AC6;
+}
+.forgetpw {
+    text-decoration: none;
+    color: #129AC6;
 }
 .container-footer .row {
     margin: 10px 0px;
