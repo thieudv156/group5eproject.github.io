@@ -139,9 +139,13 @@
     border: solid 1px gray;
     height: 30px;
     width: 100%;
-
 }
-
+.login-color a {
+    color: #129AC6;
+}
+.tab-content {
+    color: #129AC6;
+}
 .container-mailing {
     display: flex;
     justify-content: space-between;
@@ -151,7 +155,41 @@
     color: white;
     font-size: 20px; 
     font-weight: bold;
-    
+}
+/* Detail content */
+
+.image-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login */
+.login--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #129AC6;
+    color: white;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.text-center button {
+    color: #129AC6;
+}
+.forgetpw {
+    text-decoration: none;
+    color: #129AC6;
+}
+
+.signin-btn {
+    background-color: #129AC6;
+    border-color: #129AC6;
+}
+
+.signin-btn:hover {
+    background-color: #2e749a;
 }
 
 .container-footer .row {
