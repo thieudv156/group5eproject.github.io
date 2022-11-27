@@ -174,8 +174,9 @@
     color: white;
     /* padding-top: 10px; */
     border-radius: 10px;
-    width: 210px;
+    width: 100px;
     height: 35px;
+    margin-left: 25px;
 }
 .text-center button {
     color: #129AC6;
