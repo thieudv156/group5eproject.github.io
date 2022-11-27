@@ -186,6 +186,19 @@
     color: #129AC6;
 }
 
+/* Feedback */
+
+.submit-btn-color {
+    background-color: #129AC6;
+    color: white;
+    border: #129AC6;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.submit-btn-color:hover {
+    background-color: #2e749a;
+}
+
 /* Food Travel */
 .btn-food-travel {
     color: white;
