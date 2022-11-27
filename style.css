@@ -186,6 +186,22 @@
     color: #129AC6;
 }
 
+/* Food Travel */
+.btn-food-travel {
+    color: white;
+    font-weight: bold;
+    background-color: #129AC6;
+    border: none;
+    padding: 5px 20px;
+    min-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn-food-travel a {
+    text-decoration: none;
+    color: white;
+}
 .signin-btn {
     background-color: #129AC6;
     border-color: #129AC6;
