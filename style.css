@@ -215,6 +215,18 @@
     text-decoration: none;
     color: white;
 }
+
+/* Book */
+.title-text-decor {
+    text-decoration: none;
+    color: black;
+}
+
+.title-text-decor:hover {
+    color: #129AC6;
+}
+
+/* Sign in */
 .signin-btn {
     background-color: #129AC6;
     border-color: #129AC6;
