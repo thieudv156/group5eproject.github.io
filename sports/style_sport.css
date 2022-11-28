@@ -211,12 +211,12 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.card-title{
-    text-decoration: none;
-    color: black;
-}
+
 .head-title{
     text-decoration: none;
     color: black;
+}
 
+.head-title:hover {
+    color: #129AC6;
 }
