@@ -24,13 +24,15 @@ function topFunction() {
 function submitLogin() {
     var loginEmail = document.getElementById("loginName").value;
     var password = document.getElementById("loginPassword").value;
-    if(!loginEmail[0].value) {
-      return;
-    }
+    // if(!loginEmail[0].value) {
+    //   return;
+    // }
 
-    if(!password[0].value) {
-      return;
-    }
-    document.getElementById("frmLogin").frmLogin.submit();
+    // if(!password[0].value) {
+    //   return;
+    // }
+    // document.getElementById("frmLogin").frmLogin.submit();
+    alert("Thanh cong");
+    
 }
 
