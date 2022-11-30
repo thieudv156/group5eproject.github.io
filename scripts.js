@@ -21,10 +21,16 @@ function topFunction() {
 
 
 
-// function() {
-//     var loginEmail = document.getElementById("loginName").value;
-//     var password = document.getElementById("loginPassword").value;
-    
+function submitLogin() {
+    var loginEmail = document.getElementById("loginName").value;
+    var password = document.getElementById("loginPassword").value;
+    if(!loginEmail[0].value) {
+      return;
+    }
 
-// }
+    if(!password[0].value) {
+      return;
+    }
+    document.getElementById("frmLogin").frmLogin.submit();
+}
 
