@@ -14,27 +14,28 @@
     <div class="container">
         <div class="row sticky-top align-items-center" style="background-color: white;">
             <div class="col-2 d-flex" style="padding: 0px">
-                <div class="dropdown">
-                    <a class="btn btn-primary dropdown"
-                      href="#"
-                      role="button"
-                      id="dropdownMenuLink"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                    <i class="fa-solid fa-bars toggle-menu"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-color" style="background-color: white;border: 1px solid" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                      <li><a class="dropdown-item" href="../world/world.html">World</a></li>
-                      <li><a class="dropdown-item" href="../business/business.html">Business</a></li>
-                      <li><a class="dropdown-item" href="../sports/sports.html">Sports</a></li>
-                      <li><a class="dropdown-item" href="..//books/books.html">Books</a></li>
-                      <li><a class="dropdown-item" href="../foodtravel/foodtravel.html">Food & Travel</a></li>
-                      <li><a class="dropdown-item" href="../contact/contact.html">Contact Us</a></li>
-                      <li><a class="dropdown-item" href="#">Feedback</a></li>
-                    </ul>
-                </div>
+                <div class="offcanvas offcanvas-start" id="demo">
+                    <div class="offcanvas-header">
+                      <a href="../index.html"><img src="../image-logo/logo.png" alt="" style="height: 100px"></a>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <br>
+                    <div class="offcanvas-body">
+                            <a class="dropdown-item" href="../index.html">Home</a> <br>
+                            <a class="dropdown-item" href="../world/world.html">World</a> <br>
+                            <a class="dropdown-item" href="../business/business.html">Business</a> <br>
+                            <a class="dropdown-item" href="../sports/sports.html">Sports</a> <br>
+                            <a class="dropdown-item" href="../books/books.html">Books</a> <br>
+                            <a class="dropdown-item" href="../foodtravel/foodtravel.html">Food & Travel</a><br>
+                            <a class="dropdown-item" href="../contact/contact.html">Contact Us</a> <br>
+                            <a class="dropdown-item" href="../feedback/feedback.html">Feedback</a> <br>
+                    </div>
+                  </div>
+                  <div class="container-fluid mt-3">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars toggle-menu"></i>
+                    </button>
+                    </div>
                 <!-- search -->
                 <div class="btn-group input-group w-25">
                     <button class="btn btn-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
