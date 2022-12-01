@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2" style="color: #0386b1; font-weight: bold;"><i class="fa-solid fa-cloud-moon"></i> Weather</div>
+            <div class="col-2" style="color: #0386b1; font-weight: bold;"><i class="fa-solid fa-cloud-moon"></i> <i class="fa-solid fa-sun"></i></div>
         </div>
         <!-- End header -->
         <!-- Start navbar -->
@@ -110,19 +110,19 @@
                         <div class="text-center mb-3">
                           <p>Sign in with:</p>
                           <button type="button" class="btn btn-link btn-floating mx-1">
-                            <i class="fab fa-facebook-f"></i>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
                           </button>
                   
                           <button type="button" class="btn btn-link btn-floating mx-1">
-                            <i class="fab fa-google"></i>
+                            <a href=""><i class="fab fa-google"></i></a>
                           </button>
                   
                           <button type="button" class="btn btn-link btn-floating mx-1">
-                            <i class="fab fa-twitter"></i>
+                            <a href=""><i class="fab fa-twitter"></i></a>
                           </button>
                   
                           <button type="button" class="btn btn-link btn-floating mx-1">
-                            <i class="fab fa-github"></i>
+                            <a href=""><i class="fab fa-github"></i></a>
                           </button>
                         </div>
                   
@@ -131,11 +131,13 @@
                         <!-- Email input -->
                         <div class="form-outline mb-4">
                           <input type="email" id="loginName" class="form-control form-input" placeholder="Email" required/>
+                          <span class="error-message"></span>
                         </div>
                   
                         <!-- Password input -->
                         <div class="form-outline mb-4">
                           <input type="password" id="loginPassword" class="form-control" placeholder="Password" required/>
+                          <span class="error-message"></span>
                         </div>
                   
                         <!-- 2 column grid layout -->
