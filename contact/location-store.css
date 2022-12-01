@@ -26,6 +26,14 @@
     align-items: center;
 }
 
+.weather>i {
+    padding: 0px 8px;
+}
+
+.weather>i:hover{
+    font-size: 22px;
+}
+
 #dropdownMenuLink {
     background-color: transparent;
     color: black;
