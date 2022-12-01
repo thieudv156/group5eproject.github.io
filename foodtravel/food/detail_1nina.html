@@ -14,27 +14,29 @@
     <div class="container">
         <div class="row sticky-top align-items-center" style="background-color: white;">
             <div class="col-2 d-flex" style="padding: 0px">
-                <div class="dropdown">
-                    <a class="btn btn-primary dropdown"
-                      href="#"
-                      role="button"
-                      id="dropdownMenuLink"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                    <i class="fa-solid fa-bars toggle-menu"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-color" style="background-color: white;border: 1px solid" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="../../index.html">Home</a></li>
-                        <li><a class="dropdown-item" href="../../world/world.html">World</a></li>
-                        <li><a class="dropdown-item" href="../../business/business.html">Business</a></li>
-                        <li><a class="dropdown-item" href="../../sports/sports.html">Sports</a></li>
-                        <li><a class="dropdown-item" href="../../books/books.html">Books</a></li>
-                        <li><a class="dropdown-item" href="../../foodtravel/foodtravel.html">Food & Travel</a></li>
-                        <li><a class="dropdown-item" href="../../contact/contact.html">Contact Us</a></li>
-                        <li><a class="dropdown-item" href="../../feedback/feedback.html">Feedback</a></li>
-                    </ul>
-                </div>
+                <div class="offcanvas offcanvas-start" id="demo">
+                    <div class="offcanvas-header">
+                      <a href="../index.html"><img src="../../image-logo/logo.png" alt="" style="height: 100px"></a>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <br>
+                    <div class="offcanvas-body">
+                            <a class="dropdown-item" href="../../index.html">Home</a> <br>
+                            <a class="dropdown-item" href="../../world/world.html">World</a> <br>
+                            <a class="dropdown-item" href="../../business/business.html">Business</a> <br>
+                            <a class="dropdown-item" href="../../sports/sports.html">Sports</a> <br>
+                            <a class="dropdown-item" href="../../books/books.html">Books</a> <br>
+                            <a class="dropdown-item" href="../../foodtravel/foodtravel.html">Food & Travel</a><br>
+                            <a class="dropdown-item" href="../../contact/contact.html">Contact Us</a> <br>
+                            <a class="dropdown-item" href="../../feedback/feedback.html">Feedback</a> <br>
+                    </div>
+                  </div>
+                  
+                  <div class="container-fluid mt-3">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars toggle-menu"></i>
+                    </button>
+                  </div>
                 <!-- search -->
                 <div class="btn-group input-group w-25">
                     <button class="btn btn-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,7 +62,7 @@
             </div>
             <div class="col-8 header-logo"><a href="../../index.html"><img src="../../image-logo/logo.png" style="height:80px" alt=""></a></div>
             <div class="col-2 text-end"><button class="btn-signin btn btn-info">
-                <a href="../../login/login.html"><i class="fa-regular fa-user" style="color: white;"></i></a>
+               <a href="../../login/login.html"><i class="fa-regular fa-user" style="color: white;"></i></a> 
             </button></div>
             
             <!-- End navbar -->
@@ -135,7 +137,7 @@
                     <div class="card" style="width: 100%;">
                         <a href="detail_12countdown.html"><img src="../image_food/12countdown.png" class="card-img-top" alt="countdown"></a>
                         <div class="card-body">
-                            <a href="detail_12countdown.html"><h5 class="card-title">Christmas countdown calendar: what to do at 4 weeks</h5></a>
+                            <a href="detail_12countdown.html" class="title-text-decor"><h5 class="card-title">Christmas countdown calendar: what to do at 4 weeks</h5></a>
                             <p class="card-text">There are 26 days until Christmas. If you just used an expletive out loud, it’s time to read our Christmas planner and save yourself those...
                             </p>
                         </div>
@@ -145,7 +147,7 @@
                     <div class="card" style="width: 100%;">
                         <a href="detail_7science.html"><img src="../image_food/7science.jpg" class="card-img-top" alt="science"></a>
                         <div class="card-body">
-                            <a href="detail_7science.html"><h5 class="card-title"> Science says consuming wine and cheese daily is good for your brain</h5></a>
+                            <a href="detail_7science.html" class="title-text-decor"><h5 class="card-title"> Science says consuming wine and cheese daily is good for your brain</h5></a>
                             <p class="card-text">It’s gouda news for cheese fiends and vino aficionados: a new study shows that consuming more wine...
                             </p>
                         </div>
@@ -155,7 +157,7 @@
                     <div class="card" style="width: 100%;">
                         <a href="detail_9cheese.html"><img src="../image_food/9cheese.png" class="card-img-top" alt="cheese"></a>
                         <div class="card-body">
-                            <a href="detail_9cheese.html"><h5 class="card-title"> WHAT IS FETA / SIRENE (Bulgarian Cheese)?</h5></a>
+                            <a href="detail_9cheese.html" class="title-text-decor"><h5 class="card-title"> WHAT IS FETA / SIRENE (Bulgarian Cheese)?</h5></a>
                             <p class="card-text">Most listeners will have tried feta already. its a brined curd white cheese made from sheep’s milk or from a mixture of sheep and goat’s milk. It is a crumbly aged cheese, normally at least 3 months aged, commonly...
                             </p>
                         </div>
@@ -165,7 +167,7 @@
                     <div class="card" style="width: 100%;">
                         <a href="detail_10nanna.html"><img src="../image_food/10nanna.png" class="card-img-top" alt="nanna"></a>
                         <div class="card-body">
-                            <a href="detail_10nanna.html"><h5 class="card-title">34 recipes from Nanna we're making in times like these</h5></a>
+                            <a href="detail_10nanna.html" class="title-text-decor"><h5 class="card-title">34 recipes from Nanna we're making in times like these</h5></a>
                             <p class="card-text">Make like Nanna and recreate these simple classic recipes we had when we were growing up. Golden syrup cakes, cottage pies, classic lasagnes...
                             </p>
                         </div>
