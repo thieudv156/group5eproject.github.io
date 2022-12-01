@@ -33,6 +33,28 @@
 .weather>i:hover{
     font-size: 22px;
 }
+.container-fluid>button {
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+.container-fluid>button:hover {
+    background-color: #2e749a;
+}
+
+.offcanvas-body>a {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.offcanvas-body>a:hover {
+    background-color: #129AC6;
+    width: 75%;
+    /* font-size: 20px; */
+    color: #FFF;
+    /* padding: 10px 0px; */
+}
 
 #dropdownMenuLink {
     background-color: transparent;
