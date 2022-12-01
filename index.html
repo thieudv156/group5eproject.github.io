@@ -14,27 +14,29 @@
     <div class="container">
         <div class="row sticky-top align-items-center" style="background-color: white;">
             <div class="col-2 d-flex" style="padding: 0px">
-                <div class="dropdown">
-                    <a class="btn btn-primary dropdown"
-                      href="#"
-                      role="button"
-                      id="dropdownMenuLink"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                    <i class="fa-solid fa-bars toggle-menu"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-color" style="background-color: white;border: 1px solid" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="index.html">Home</a></li>
-                      <li><a class="dropdown-item" href="./world/world.html">World</a></li>
-                      <li><a class="dropdown-item" href="./business/business.html">Business</a></li>
-                      <li><a class="dropdown-item" href="./sports/sports.html">Sports</a></li>
-                      <li><a class="dropdown-item" href="./books/books.html">Books</a></li>
-                      <li><a class="dropdown-item" href="./foodtravel/foodtravel.html">Food & Travel</a></li>
-                      <li><a class="dropdown-item" href="./contact/contact.html">Contact Us</a></li>
-                      <li><a class="dropdown-item" href="./feedback/feedback.html">Feedback</a></li>
-                    </ul>
-                </div>
+                <div class="offcanvas offcanvas-start" id="demo">
+                    <div class="offcanvas-header">
+                      <a href="index.html"><img src="./image-logo/logo.png" alt="" style="height: 100px"></a>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <br>
+                    <div class="offcanvas-body">
+                            <a class="dropdown-item" href="index.html">Home</a> <br>
+                            <a class="dropdown-item" href="./world/world.html">World</a> <br>
+                            <a class="dropdown-item" href="./business/business.html">Business</a> <br>
+                            <a class="dropdown-item" href="./sports/sports.html">Sports</a> <br>
+                            <a class="dropdown-item" href="./books/books.html">Books</a> <br>
+                            <a class="dropdown-item" href="./foodtravel/foodtravel.html">Food & Travel</a> <br>
+                            <a class="dropdown-item" href="./contact/contact.html">Contact Us</a> <br>
+                            <a class="dropdown-item" href="./feedback/feedback.html">Feedback</a> <br>
+                    </div>
+                  </div>
+                  
+                  <div class="container-fluid mt-3">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars toggle-menu"></i>
+                    </button>
+                  </div>
                 <!-- search -->
                 <div class="btn-group input-group w-25">
                     <button class="btn btn-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -79,7 +81,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2" style="color: #0386b1; font-weight: bold;"><i class="fa-solid fa-cloud-moon"></i> Weather</div>
+            <div class="col-2 weather" style="color: #0386b1">
+                <i class="fa-solid fa-cloud-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-bolt"></i>
+                <i class="fa-solid fa-wind"></i>
+                <i class="fa-solid fa-smog"></i>
+            </div>
         </div>
         <!-- End header -->
         <!-- Start navbar -->
@@ -145,7 +153,7 @@
                         <div class="card" style="width: 100%;">
                             <a href="./foodtravel/travel/detail_6planning.html"><img src="./foodtravel/image_travel/6planning.png" class="card-img-top" alt="planning6" style="height: 100px;"></a>
                             <div class="card-body">
-                                <a href="./foodtravel/travel/detail_6planning.html" class="title-text-decor"><h5 class="card-title"> Planning a trip to Japan? This travel expert answers all of your questions</h5></a>
+                                <a href="./foodtravel/travel/detail_6planning.html" class="title-text-decor"><h6 class="card-title"> Planning a trip to Japan? This travel expert answers all of your questions</h6></a>
                                 </p>
                             </div>
                         </div>
@@ -154,7 +162,7 @@
                         <div class="card" style="width: 100%;">
                             <a href="./foodtravel/food/detail_1nina.html"><img src="./foodtravel/image_food/1nina.jpg" class="card-img-top" alt="nina" style="height: 100px;"></a>
                             <div class="card-body">
-                                <a href="./foodtravel/food/detail_1nina.html" class="title-text-decor"><h5 class="card-title"> Is La Niña giving us the best prawns ever for Christmas lunch this year?</h5></a>
+                                <a href="./foodtravel/food/detail_1nina.html" class="title-text-decor"><h6 class="card-title"> Is La Niña giving us the best prawns ever for Christmas lunch this year?</h6></a>
                             </div>
                         </div>
                     </div>
@@ -284,7 +292,7 @@
                 <div class="card1" style="width: 100%;">
                     <div class="card-body">
                         <a href="./sports/detail_tenNovakDjokovic.html" class="head-title title-text-decor"><h5 class="card-title">Nitto ATP Finals: Novak Djokovic beats Casper Ruud in final to win sixth title</h5></a> 
-                        <p class="card-text"></p> <br> 
+                        <p class="card-text"></p>
                     </div> 
                     <a href="./sports/detail_tenNovakDjokovic.html"><img src="./sports/image_sports/tennis5.jpg" class="card-img-top" alt="sports11" style="height:270px"></a> 
                      
@@ -294,7 +302,7 @@
                 <div class="card2" style="width: 100%;">
                     <div class="card-body">
                         <a href="./sports/detail_tenGB.html" class="head-title title-text-decor"><h5 class="card-title">GB to face Spain and Australia at United Cup without Raducanu</h5></a> 
-                         <p class="card-text"></p> <br>
+                         <p class="card-text"></p>
                     </div>
                     <a href="./sports/detail_tenGB.html"><img src="./sports/image_sports/tennis2.jpg" class="card-img-top" alt="sports12"></a> 
                     
@@ -305,7 +313,7 @@
                     <div class="card-body">
                         <a href="./sports/detail_tenBadosa.html" class="head-title title-text-decor"><h5 class="card-title">Badosa leads Spain to victory over Kazakhstan</h5></a> 
                          <p class="card-text"></p>
-                    </div> <br><br>
+                    </div>
                     <a href="./sports/detail_tenBadosa.html"><img src="./sports/image_sports/tennis3.jpg" class="card-img-top" alt="sports13"></a>
                 </div>
             </div>
@@ -422,10 +430,10 @@
                     </div>
                     <div class="row">We respect your privacy</div>
                     <div class="row social-icons">
-                        <div class="col-3"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style=" font-size: 25px"></i></a></div>
-                        <div class="col-3"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style=" font-size: 25px"></i></a></div>
-                        <div class="col-3"><a href="https://www.tiktok.com/en"><i class="fa-brands fa-tiktok" style=" font-size: 25px"></i></a></div>
-                        <div class="col-3"><a href=""><i class="fa-brands fa-google" style=" font-size: 25px"></i></a></div>
+                        <div class="col-3"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style=" font-size: 25px"></i></a></div>
+                        <div class="col-3"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style=" font-size: 25px"></i></a></div>
+                        <div class="col-3"><a href="https://www.tiktok.com/en" target="_blank"><i class="fa-brands fa-tiktok" style=" font-size: 25px"></i></a></div>
+                        <div class="col-3"><a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-google" style=" font-size: 25px"></i></a></div>
                     </div>
                 </div>
                 <div class="copyright" style="text-align: center;">
