@@ -47,3 +47,10 @@ function validateonSubmit() {
   });
 }
 
+function onSignIn() {
+  alert("Sign in sucessfully!");
+}
+
+function onFeedback() {
+  alert("Thanks for your feedback!");
+}
