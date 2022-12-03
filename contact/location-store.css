@@ -20,6 +20,13 @@
     /* position: fixed; */
     /* top: 0px;
 } */
+
+.list-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .header-logo {
     display: flex;
     justify-content: center;
@@ -183,6 +190,7 @@
     /* background: red; */
     position: relative;
 }
+
 
 .location .child 
 {
