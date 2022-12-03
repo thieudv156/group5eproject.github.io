@@ -197,13 +197,11 @@
     height: 500px;
     display: none;
     position: absolute;
-/*   background: teal;*/    
 }
 
 .location {
     width: 70%;
     height: 500px;
- /* background: teal;*/
     margin-left: 350px;
 }
 
@@ -232,6 +230,8 @@ h2.text1
 
 .text1 {
     font-family:Arial;
+    /* text-decoration: none;
+    color: black; */
 }
 
 .container-footer {
